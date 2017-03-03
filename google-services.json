@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "513248920145",
+    "project_id": "tasque-3240e"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513248920145:android:d2c51ca668cfdff6",
+        "android_client_info": {
+          "package_name": "com.project.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513248920145-7g3ptutar9828n4klf279t69cfi6o46o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.todolist",
+            "certificate_hash": "6F992C837157F77E083F48C35CDF2389412532A3"
+          }
+        },
+        {
+          "client_id": "513248920145-tq0k2pm4m9ubr5e4iqp6k3voo77k6851.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJP99xx4gZTy6fwHzhR6_wIYlVXJOI41s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

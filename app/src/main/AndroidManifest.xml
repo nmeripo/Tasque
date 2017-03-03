@@ -1,0 +1,137 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.project.todolist">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.CAMERA" android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="true"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <uses-library android:name="com.google.android.maps"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_scheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJP99xx4gZTy6fwHzhR6_wIYlVXJOI41s"/>
+
+        <activity
+            android:name="com.project.todolist.activities.SignInActivity"
+            android:label="@string/app_name"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.todolist.activities.MainActivity"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.project.todolist.activities.CreateEditActivity"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.ViewActivity"
+            android:theme="@style/AppThemeLight"/>
+
+        <activity
+            android:name="com.project.todolist.activities.PreferenceActivity"
+            android:label="@string/settings"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="com.project.todolist.activities.BrightnessToggle"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.popup_window"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.Visual_graph"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.AboutActivity"
+            android:label="@string/about"
+            android:theme="@style/AppThemeLight"/>
+        <activity
+            android:name="com.project.todolist.activities.CameraActivity"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.MapActivity"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="com.project.todolist.activities.LocationActivity"
+            android:theme="@style/AppThemeLight"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.project.todolist.activities.SnoozeDialogActivity"
+            android:taskAffinity=""
+            android:theme="@style/AppThemeTransparent"
+            android:excludeFromRecents="true"/>
+
+        <activity
+            android:name="com.project.todolist.activities.shortcut.CreateEditShortcut"
+            android:taskAffinity=""
+            android:theme="@style/AppThemeDialog"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.project.todolist.activities.shortcut.ShortcutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.project.todolist.receivers.AlarmReceiver" />
+
+        <receiver android:name="com.project.todolist.receivers.SnoozeActionReceiver" />
+
+        <receiver android:name="com.project.todolist.receivers.SnoozeReceiver" />
+
+        <receiver android:name="com.project.todolist.receivers.DismissReceiver" />
+
+        <receiver android:name="com.project.todolist.receivers.NagReceiver" />
+
+        <receiver
+            android:name="com.project.todolist.receivers.BootReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
