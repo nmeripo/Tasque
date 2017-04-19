@@ -2,11 +2,11 @@
 A smart task management application for Android
 
 ## Screenshots
-![alt text](screenshots/a.png "a.") ![alt text](screenshots/b.png "b.") ![alt text](screenshots/c.png "c.") ![alt text](screenshots/d.png "d.")
-
 <p align="center">
   <img src="/screenshots/a.png" width="350"/>
   <img src="/screenshots/b.png" width="350"/>
+  <img src="/screenshots/c.png" width="350"/>
+  <img src="/screenshots/d.png" width="350"/>
 </p>
 
 ## Implementation
