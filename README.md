@@ -4,6 +4,11 @@ A smart task management application for Android
 ## Screenshots
 ![alt text](screenshots/a.png "a.") ![alt text](screenshots/b.png "b.") ![alt text](screenshots/c.png "c.") ![alt text](screenshots/d.png "d.")
 
+<p align="center">
+  <img src="/screenshots/a.png" width="350"/>
+  <img src="/screenshots/b.png" width="350"/>
+</p>
+
 ## Implementation
 ### Login authentication 
 Only authenticated users can log in into the app using Google log-in. Used Google Sign-In API for this purpose.
