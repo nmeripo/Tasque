@@ -3,10 +3,10 @@ A smart task management application for Android
 
 ## Screenshots
 <p align="center">
-  <img src="/screenshots/a.png" width="250"/>
-  <img src="/screenshots/b.png" width="250"/>
-  <img src="/screenshots/c.png" width="250"/>
-  <img src="/screenshots/d.png" width="250"/>
+  <img src="/screenshots/a.png" width="200"/>
+  <img src="/screenshots/b.png" width="200"/>
+  <img src="/screenshots/c.png" width="200"/>
+  <img src="/screenshots/d.png" width="200"/>
 </p>
 
 ## Implementation
