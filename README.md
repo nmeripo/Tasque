@@ -2,10 +2,7 @@
 A smart task management application for Android
 
 ## Screenshots
-![alt text](screenshots/a.png "a.")
-![alt text](screenshots/b.png "b.")
-![alt text](screenshots/c.png "c.")
-![alt text](screenshots/d.png "d.")
+![alt text](screenshots/a.png "a.") ![alt text](screenshots/b.png "b.") ![alt text](screenshots/c.png "c.") ![alt text](screenshots/d.png "d.")
 
 ## Implementation
 ### Login authentication 
